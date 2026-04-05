@@ -198,21 +198,26 @@ Register two accounts in different tabs and start chatting in real time!
 - [ ] End-to-end encryption
 
 ---
+Challenges Faced
 
-## 🐛 Common Issues
+During the development of this project, I faced several challenges:
 
-**MongoDB connection fails:**
-- Make sure MongoDB is running: `mongod`
-- Or use MongoDB Atlas cloud URI in `.env`
+1. Socket Connection Handling
 
-**CORS errors:**
-- Confirm `CLIENT_URL` in server `.env` matches your React dev URL
+Managing real-time user connections and tracking online users using socket IDs was complex, especially when users disconnected unexpectedly.
 
-**Socket not connecting:**
-- Confirm `REACT_APP_SOCKET_URL` in client `.env` matches your backend URL
+2. Authentication Issues
 
----
+Handling JWT authentication between frontend and backend required careful token management and debugging login failures.
 
-## 📄 License
+3. MongoDB Data Sync
 
-MIT — free to use and modify.
+Ensuring messages were properly stored and retrieved in correct order required multiple schema adjustments and testing.
+
+4. React State Management
+
+Keeping chat UI updated in real-time without refreshing the page required proper use of useEffect and socket listeners.
+
+5. Deployment & Git Issues
+
+Faced issues with Git push conflicts and repository synchronization, which required learning proper git pull/push workflow.
