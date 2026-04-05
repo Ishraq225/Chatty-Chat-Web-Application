@@ -3,9 +3,7 @@
 A full-stack WhatsApp-style real-time chat app built with React, Node.js, Socket.io, and MongoDB.
 
 ---
-
-
-For testing application use:
+For testing application use
 
 email: ishraq2@gmailcom
 password: 1234567
