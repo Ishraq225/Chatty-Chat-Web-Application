@@ -3,8 +3,16 @@
 A full-stack WhatsApp-style real-time chat app built with React, Node.js, Socket.io, and MongoDB.
 
 ---
+For testing application use:
+email: ishraq2@gmailcom
+password: 1234567
 
-## 🚀 Tech Stack
+email: haram@gmail.com
+password: haram123
+
+OR Register your Account first ;)
+
+## Tech Stack
 
 | Layer      | Technology                                |
 |------------|-------------------------------------------|
@@ -16,7 +24,7 @@ A full-stack WhatsApp-style real-time chat app built with React, Node.js, Socket
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 chatty-chat/
@@ -149,7 +157,7 @@ Register two accounts in different tabs and start chatting in real time!
 
 ---
 
-## 🔐 API Endpoints
+##  API Endpoints
 
 ### Auth
 | Method | Endpoint              | Description            | Auth Required |
@@ -169,7 +177,7 @@ Register two accounts in different tabs and start chatting in real time!
 
 ---
 
-## ✨ Features
+##  Features
 
 - ✅ JWT Authentication (Register / Login / Logout)
 - ✅ Real-time messaging via Socket.io
@@ -186,7 +194,7 @@ Register two accounts in different tabs and start chatting in real time!
 
 ---
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 
 - [ ] Image / file sharing
 - [ ] Group chats
