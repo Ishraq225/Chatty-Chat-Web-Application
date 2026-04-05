@@ -5,7 +5,7 @@ A full-stack WhatsApp-style real-time chat app built with React, Node.js, Socket
 ---
 For testing application use
 
-email: ishraq2@gmailcom
+email: ishraq2@gmail.com
 password: 1234567
 
 email: haram@gmail.com
