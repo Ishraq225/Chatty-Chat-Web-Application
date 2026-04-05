@@ -1,0 +1,85 @@
+/* ─── Message Bubbles ────────────────────────────────── */
+.bubble-row {
+  display: flex;
+  margin-bottom: 3px;
+  animation: bubble-in 0.18s ease-out;
+}
+
+@keyframes bubble-in {
+  from { opacity: 0; transform: translateY(6px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.bubble-row.mine {
+  justify-content: flex-end;
+}
+
+.bubble-row.theirs {
+  justify-content: flex-start;
+}
+
+.bubble {
+  max-width: 65%;
+  min-width: 80px;
+  padding: 9px 13px 7px;
+  border-radius: 14px;
+  position: relative;
+  word-break: break-word;
+}
+
+/* Sent (mine) - green */
+.bubble-mine {
+  background: #1f4a2e;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Received (theirs) - dark gray */
+.bubble-theirs {
+  background: #1a2b1a;
+  border-bottom-left-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Deleted */
+.deleted-bubble {
+  background: transparent;
+  border: 1px dashed #2a3a2a;
+  color: #4a5e4a;
+  font-size: 13px;
+}
+
+.bubble-text {
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: #e0ece0;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.bubble-theirs .bubble-text {
+  color: #c8ddc8;
+}
+
+/* Meta (time + tick) */
+.bubble-meta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+.bubble-time {
+  font-size: 10.5px;
+  color: #5a7a5a;
+  line-height: 1;
+}
+
+.bubble-mine .bubble-time {
+  color: #4a7a5a;
+}
+
+.bubble-status {
+  display: flex;
+  align-items: center;
+}

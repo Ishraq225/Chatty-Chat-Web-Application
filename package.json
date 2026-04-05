@@ -1,0 +1,14 @@
+{
+  "name": "chatty-chat",
+  "version": "1.0.0",
+  "description": "Chatty Chat - Real-Time Chat Application",
+  "scripts": {
+    "install-all": "cd server && npm install && cd ../client && npm install",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm start\"",
+    "start:server": "cd server && npm start",
+    "start:client": "cd client && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

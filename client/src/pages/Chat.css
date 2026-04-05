@@ -1,0 +1,50 @@
+/* ─── Chat Page Layout ─────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap');
+
+.chat-page {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: #0a0f0a;
+  font-family: 'Sora', sans-serif;
+}
+
+/* ─── Mobile Responsive ─────────────────────────────── */
+@media (max-width: 768px) {
+  .chat-page {
+    flex-direction: column;
+  }
+
+  /* On mobile: show only sidebar OR chatbox, not both */
+  .chat-page .sidebar {
+    width: 100%;
+    height: 100%;
+    border-right: none;
+    border-bottom: 1px solid #1a261a;
+  }
+
+  .chat-page .chatbox,
+  .chat-page .chatbox-empty {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Hide chatbox-empty on mobile (sidebar shown by default) */
+  .chat-page .chatbox-empty {
+    display: none;
+  }
+}
+
+/* ─── Animations ────────────────────────────────────── */
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateX(20px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.chatbox {
+  animation: fadeSlideIn 0.2s ease-out;
+}
